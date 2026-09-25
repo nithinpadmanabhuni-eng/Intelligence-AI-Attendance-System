@@ -7,8 +7,11 @@ import io
 @st.dialog("Share Class Link")
 def share_subject_dialog(subject_name, subject_code):
 
-    app_domain = "snapclass-main.streamlit.app"
-    join_url = f"{app_domain}/?join-code={subject_code}"
+    # Retrieve host dynamically (e.g., "your-app-name.streamlit.app" or "localhost:8501")
+    host = st.context.headers.get("Host", "localhost:8501")
+    
+    # Construct full URL with protocol
+    join_url = f"https://{host}/?join-code={subject_code}"
 
     st.header("Scan to Join")
 
