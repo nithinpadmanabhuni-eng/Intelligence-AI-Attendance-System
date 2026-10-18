@@ -640,7 +640,7 @@ def teacher_screen_login():
 
 
 
-    teacher_username = st.text_input("Enter username", placeholder='nithin')
+    teacher_username = st.text_input("Enter username", placeholder='Enter your name')
 
 
 
@@ -748,9 +748,9 @@ def teacher_screen_register():
 
    
 
-    teacher_username = st.text_input("Enter username", placeholder='nithin')
+    teacher_username = st.text_input("Enter username", placeholder='Enter the username')
 
-    teacher_name = st.text_input("Enter name", placeholder='nithin')
+    teacher_name = st.text_input("Enter name", placeholder='Enter the name')
 
 
 
